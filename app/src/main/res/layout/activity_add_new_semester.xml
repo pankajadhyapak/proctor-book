@@ -1,0 +1,307 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.madproject.proctorbook.Students.AddNewSemesterActivity"
+    android:id="@+id/RegisterLabel">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Register For New Semester"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:id="@+id/newRegSem" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/newRegSem"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- Row 3 with 2 columns -->
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/first_name_label"
+                    android:layout_width="135dp"
+                    android:padding="8dip"
+                    android:text="Term Start Date"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/termStartDate"
+                    android:layout_weight="1"
+                    android:padding="8dip"
+                    android:text="Click To Set Date"
+                    android:onClick="termStartDate"/>
+            </TableRow>
+
+            <!-- Row 3 with 2 columns -->
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_below="@id/tableRow1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/first_name_label2"
+                    android:layout_width="135dp"
+                    android:padding="8dip"
+                    android:text="Term End Date"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/termEndDate"
+                    android:layout_weight="1"
+                    android:padding="8dip"
+                    android:text="Click To Set Date"
+                    android:onClick="termEndDate"/>
+            </TableRow>
+
+            <!-- Row 3 with 2 columns -->
+            <!--<TableRow-->
+                <!--android:id="@+id/tableRow3"-->
+                <!--android:layout_below="@id/tableRow2"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_horizontal">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/subName1"-->
+                    <!--android:hint="Subject 1 Name"-->
+                    <!--android:layout_width="246dp"-->
+                    <!--/>-->
+                <!--<EditText-->
+                    <!--android:inputType="number"-->
+                    <!--android:id="@+id/subCredits1"-->
+                    <!--android:hint="@string/hint_sub_credits"-->
+                    <!--android:layout_width="match_parent" />-->
+
+            <!--</TableRow>-->
+
+            <!--&lt;!&ndash; Row 3 with 2 columns &ndash;&gt;-->
+            <!--<TableRow-->
+                <!--android:id="@+id/tableRow4"-->
+                <!--android:layout_below="@id/tableRow3"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_horizontal">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/subName2"-->
+                    <!--android:hint="Subject 2 Name"-->
+                    <!--android:layout_width="246dp"-->
+                    <!--/>-->
+                <!--<EditText-->
+                    <!--android:inputType="number"-->
+                    <!--android:id="@+id/subCredits2"-->
+                    <!--android:hint="@string/hint_sub_credits"-->
+                    <!--android:layout_width="match_parent" />-->
+
+            <!--</TableRow>-->
+
+            <!--&lt;!&ndash; Row 3 with 2 columns &ndash;&gt;-->
+            <!--<TableRow-->
+                <!--android:id="@+id/tableRow5"-->
+                <!--android:layout_below="@id/tableRow4"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_horizontal">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/subName3"-->
+                    <!--android:hint="Subject 3 Name"-->
+                    <!--android:layout_width="246dp"-->
+                    <!--/>-->
+                <!--<EditText-->
+                    <!--android:inputType="number"-->
+                    <!--android:id="@+id/subCredits3"-->
+                    <!--android:hint="@string/hint_sub_credits"-->
+                    <!--android:layout_width="match_parent" />-->
+
+            <!--</TableRow>-->
+
+            <!--&lt;!&ndash; Row 3 with 2 columns &ndash;&gt;-->
+            <!--<TableRow-->
+                <!--android:id="@+id/tableRow6"-->
+                <!--android:layout_below="@id/tableRow5"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_horizontal">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/subName4"-->
+                    <!--android:hint="Subject 4 Name"-->
+                    <!--android:layout_width="246dp"-->
+                    <!--/>-->
+                <!--<EditText-->
+                    <!--android:inputType="number"-->
+                    <!--android:id="@+id/subCredits4"-->
+                    <!--android:hint="@string/hint_sub_credits"-->
+                    <!--android:layout_width="match_parent" />-->
+
+            <!--</TableRow>-->
+
+            <!--&lt;!&ndash; Row 3 with 2 columns &ndash;&gt;-->
+            <!--<TableRow-->
+                <!--android:id="@+id/tableRow7"-->
+                <!--android:layout_below="@id/tableRow6"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_horizontal">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/subName5"-->
+                    <!--android:hint="Subject 5 Name"-->
+                    <!--android:layout_width="246dp"-->
+                    <!--/>-->
+                <!--<EditText-->
+                    <!--android:inputType="number"-->
+                    <!--android:id="@+id/subCredits5"-->
+                    <!--android:hint="@string/hint_sub_credits"-->
+                    <!--android:layout_width="match_parent" />-->
+
+            <!--</TableRow>-->
+
+            <!--&lt;!&ndash; Row 3 with 2 columns &ndash;&gt;-->
+            <!--<TableRow-->
+                <!--android:id="@+id/tableRow8"-->
+                <!--android:layout_below="@id/tableRow7"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_horizontal">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/subName6"-->
+                    <!--android:hint="Subject 6 Name"-->
+                    <!--android:layout_width="246dp"-->
+                    <!--/>-->
+                <!--<EditText-->
+                    <!--android:inputType="number"-->
+                    <!--android:id="@+id/subCredits6"-->
+                    <!--android:hint="@string/hint_sub_credits"-->
+                    <!--android:layout_width="match_parent" />-->
+
+            <!--</TableRow>-->
+
+            <!--&lt;!&ndash; Row 3 with 2 columns &ndash;&gt;-->
+            <!--<TableRow-->
+                <!--android:id="@+id/tableRow9"-->
+                <!--android:layout_below="@id/tableRow8"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_horizontal">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/subName7"-->
+                    <!--android:hint="Subject 7 Name"-->
+                    <!--android:layout_width="246dp"-->
+                    <!--/>-->
+                <!--<EditText-->
+                    <!--android:inputType="number"-->
+                    <!--android:id="@+id/subCredits7"-->
+                    <!--android:hint="@string/hint_sub_credits"-->
+                    <!--android:layout_width="match_parent" />-->
+
+            <!--</TableRow>-->
+
+            <!--&lt;!&ndash; Row 3 with 2 columns &ndash;&gt;-->
+            <!--<TableRow-->
+                <!--android:id="@+id/tableRow10"-->
+                <!--android:layout_below="@id/tableRow9"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_horizontal">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/totCredits"-->
+                    <!--android:inputType="number"-->
+                    <!--android:hint="Total Credits"-->
+                    <!--android:layout_width="152dp"-->
+                    <!--/>-->
+                <!--<EditText-->
+                    <!--android:inputType="number"-->
+                    <!--android:id="@+id/acqCredits"-->
+                    <!--android:hint="Credits Acquired"-->
+                    <!--android:layout_width="wrap_content" />-->
+
+            <!--</TableRow>-->
+
+            <!--&lt;!&ndash; Row 3 with 2 columns &ndash;&gt;-->
+            <!--<TableRow-->
+                <!--android:id="@+id/tableRow11"-->
+                <!--android:layout_below="@id/tableRow10"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_horizontal">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/cgpa"-->
+                    <!--android:inputType="number"-->
+                    <!--android:hint="CGPA"-->
+                    <!--android:layout_width="152dp"-->
+                    <!--/>-->
+                <!--<EditText-->
+                    <!--android:inputType="number"-->
+                    <!--android:id="@+id/sgpa"-->
+                    <!--android:hint="SGPA"-->
+                    <!--android:layout_width="wrap_content" />-->
+
+            <!--</TableRow>-->
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/regNewSem"
+        android:onClick="addNewSem"
+        android:layout_alignBottom="@+id/scrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Subjects"
+        android:id="@+id/selectSubjects"
+        android:layout_below="@+id/newRegSem"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="141dp"
+        android:onClick="selectSubject"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/selectSubjects"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/regNewSem"
+        android:background="#fff"
+        android:padding="10dp"
+        android:layout_alignParentLeft="true"/>
+
+
+</RelativeLayout>

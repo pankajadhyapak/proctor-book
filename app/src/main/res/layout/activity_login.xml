@@ -1,0 +1,83 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.w3effects.groupmess.groupmess.utils.LoginActivity"
+android:id="@+id/loginLayout"
+android:background="@color/bg_color">
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_launcher_white"
+    android:layout_marginBottom="20dp"
+    android:id="@+id/imageView" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="@string/app_name"
+    android:id="@+id/appName"
+    android:textSize="40sp"
+    android:textColor="@android:color/white"
+    android:layout_below="@+id/imageView"
+    android:layout_centerHorizontal="true" />
+
+<LinearLayout
+    android:id="@+id/containerBox"
+    android:layout_below="@id/appName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="16dp"
+    android:layout_marginTop="40dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernameLogin"
+        android:hint="User name"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordLogin"
+        android:hint="Password"
+        />
+</LinearLayout>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Login"
+    android:id="@+id/Loginbutton"
+    android:layout_below="@+id/containerBox"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginLeft="19dp"
+    android:layout_marginRight="19dp"
+    android:layout_marginTop="-4dp"
+    android:background="#004D40"
+    android:textColor="@android:color/white"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:text="Register(Only for Faculty)"
+    android:id="@+id/registerLabel"
+    android:textColor="@android:color/white"
+    android:layout_alignParentBottom="true"
+    android:layout_alignRight="@+id/appName"
+    android:layout_alignEnd="@+id/appName"
+    android:layout_marginBottom="84dp" />
+
+
+
+</RelativeLayout>

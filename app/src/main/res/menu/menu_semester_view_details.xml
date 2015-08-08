@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.madproject.proctorbook.Students.SemesterViewDetails">
+    <item
+        android:id="@+id/action_clear_grades"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="Clear Grades" />
+</menu>

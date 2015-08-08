@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.madproject.proctorbook">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.madproject.proctorbook.ProctorBook"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.madproject.proctorbook.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.madproject.proctorbook.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.madproject.proctorbook.Teachers.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:parentActivityName="com.madproject.proctorbook.LoginActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.madproject.proctorbook.LoginActivity" />
+        </activity>
+        <activity
+            android:name="com.madproject.proctorbook.Teachers.AddNewStudent"
+            android:label="@string/title_activity_add_new_student"
+            android:parentActivityName="com.madproject.proctorbook.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.madproject.proctorbook.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.madproject.proctorbook.Teachers.TeacherHomeActivity"
+            android:label="@string/title_activity_teacher_home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.madproject.proctorbook.Students.StudentHomeActivity"
+            android:label="@string/title_activity_student_home"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.madproject.proctorbook.Teachers.StudentDetailActivity"
+            android:label="@string/title_activity_student_detail"
+            android:parentActivityName="com.madproject.proctorbook.MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.madproject.proctorbook.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.madproject.proctorbook.Students.AddNewSemesterActivity"
+            android:label="@string/title_activity_add_new_semester"
+            android:parentActivityName="com.madproject.proctorbook.MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.madproject.proctorbook.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.madproject.proctorbook.Admin.AdminHomeActivity"
+            android:label="@string/title_activity_admin_home"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.madproject.proctorbook.Admin.AdminSubjectsLists"
+            android:label="@string/title_activity_admin_subjects_lists"
+            android:parentActivityName="com.madproject.proctorbook.Admin.AdminHomeActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.madproject.proctorbook.Admin.AdminHomeActivity" />
+        </activity>
+        <activity
+            android:name="com.madproject.proctorbook.Admin.AdminAddSubject"
+            android:label="@string/title_activity_admin_add_subject"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.madproject.proctorbook.Students.SemesterViewDetails"
+            android:label="@string/title_activity_semester_view_details"
+            android:parentActivityName="com.madproject.proctorbook.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.madproject.proctorbook.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.madproject.proctorbook.Students.MeetingViewDetails"
+            android:label="@string/title_activity_meeting_view_details"
+            android:parentActivityName="com.madproject.proctorbook.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.madproject.proctorbook.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.madproject.proctorbook.Students.AddMeeting"
+            android:label="@string/title_activity_add_meeting"
+            android:parentActivityName="com.madproject.proctorbook.Students.MeetingViewDetails"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.madproject.proctorbook.Students.MeetingViewDetails" />
+        </activity>
+    </application>
+
+</manifest>
